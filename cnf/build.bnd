@@ -1,3 +1,4 @@
-#
-# This file is left open for you to define your macros
-#
+-plugin.1.Maven: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository; \
+		releaseUrl	=	https://repo.maven.apache.org/maven2/; \
+		name		=	Maven\

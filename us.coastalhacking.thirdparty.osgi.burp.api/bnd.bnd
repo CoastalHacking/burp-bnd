@@ -1,0 +1,10 @@
+Bundle-Version:1.7.3.${tstamp}
+Bundle-Description: Burp Extender API
+
+Bundle-License: \
+	https://portswigger.net/burp/eula-free.html; \
+	description='Portswigger Burp'; \
+	link='https://portswigger.net/burp/downloadfree.html';
+
+Export-Package:  \
+	burp;version=1.7.3
