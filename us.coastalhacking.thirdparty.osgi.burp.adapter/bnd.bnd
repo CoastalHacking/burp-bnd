@@ -9,5 +9,34 @@ Bundle-License: \
 	description='Portswigger Burp'; \
 	link='https://portswigger.net/burp/downloadfree.html';
 
-Export-Package:  \
-	burp;version=1.7.3
+Export-Package: \
+	burp.*;provide:=true,\
+	com.steadystate.*, \
+	flex.messaging.*, \
+	flex.management.*, \
+	org.lobobrowser.*, \
+	org.w3c.css.sac.*, \
+	org.w3c.dom.html2, \
+	org.w3c.dom.stylesheets, \
+	org.w3c.dom.views, \
+	org.w3c.dom.css
+	
+Import-Package: \
+	javax.jms; resolution:=optional, \
+	javax.management; resolution:=optional, \
+	javax.naming; resolution:=optional, \
+	javax.servlet; resolution:=optional, \
+	javax.servlet.http; resolution:=optional, \
+	javax.sql; resolution:=optional, \
+	org.apache.activemq.*; resolution:=optional, \
+	org.apache.xpath.*; resolution:=optional, \
+	org.jgroups.*; resolution:=optional, \
+	org.w3c.dom.html; resolution:=optional, \
+	*
+
+-includeresource: \
+	@burpsuite_free_v1.7.03.jar!/readme.txt
+-buildpath: \
+	osgi.cmpn;version=6.0,\
+	osgi.annotation;version=6.0,\
+	osgi.core;version=6.0

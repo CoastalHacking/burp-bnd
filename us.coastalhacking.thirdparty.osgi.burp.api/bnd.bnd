@@ -6,5 +6,6 @@ Bundle-License: \
 	description='Portswigger Burp'; \
 	link='https://portswigger.net/burp/downloadfree.html';
 
-Export-Package:  \
-	burp;version=1.7.3
+Export-Package: burp
+
+-classpath: jar/burpsuite_free_v1.7.03.jar

@@ -1,0 +1,7 @@
+Import-Package: burp, burp.i, *
+-buildpath: \
+	us.coastalhacking.thirdparty.osgi.burp.adapter;version=1.7.3,\
+	osgi.cmpn;version=6.0,\
+	osgi.core;version=6.0,\
+	osgi.annotation;version=6.0
+Bundle-Activator: us.coastalhacking.extension.burp.Activator
